@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>internship stuff</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <table class="table">
+    <div class="btn__container">
+      
+     
+      
+      
+    </div>    
+    <tr>
+      <!-- первая стр с заголовками - поэтому разбиваем на ячейки тегами th -->
+      
+      <th class="table__heading" id="col1">
+        <button id='1' class="hide__btn">hide</button>
+        Имя
+      </th>
+      
+      <th class="table__heading" id="col2">
+        <button id='2' class="hide__btn">hide</button>
+        Фамилия
+      </th>
+      <th class="table__heading" id="col3">
+        <button id='3' class="hide__btn">hide</button>
+        Описание
+      </th>
+      <th class="table__heading" id="col4">
+        <button id='4' class="hide__btn">hide</button>
+        Цвет глаз
+      </th>
+    </tr>
+    <template class="table__row_template">
+      <tr class="table__row">
+        <td class="table__cell firstname"></td>
+        <td class="table__cell lastname"></td>
+        <td class="table__cell about"></td>
+        <td class="table__cell eyeColor"></td>
+      </tr>
+    </template>
+
+  </table>
+  <button class="more__btn">Load more data</button>
+  <div class="modal">
+    <form id="form">
+      <input type="text" placeholder="Имя">
+      <input type="text" placeholder="Фамилия">
+      <input type="text" placeholder="Описание">
+      <input type="text" placeholder="Цвет глаз">
+      <button type="submit">Редактировать</button>
+    </form>
+    <button class="modal__close">закрыть</button>
+  </div>
+  <script type="module" src="./index.js">
+  </script>
+</body>
+
+</html>

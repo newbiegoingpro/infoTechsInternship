@@ -1,0 +1,26 @@
+table, .btn__container{
+    width: 50vw;
+}
+
+.btn__container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about{
+    height: 36px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.modal{
+    display: none;
+}
+
+.modal_opened{
+    display: block;
+    margin-top: 25px;
+}
+
